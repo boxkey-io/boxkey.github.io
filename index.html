@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>boxkey - the ev charging service</title>
+    <meta
+      name="description"
+      content="boxkey: Join our community-driven platform, share your ev charger and earn money. Contribute to a greener future by expanding the worlds charging infrastructure"
+    />
+    <meta property="og:title" content="boxkey - the ev charging service" />
+    <meta
+      property="og:description"
+      content="boxkey: Join our community-driven platform, share your ev charger and earn money. Contribute to a greener future by expanding the worlds charging infrastructure"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.12/dist/default/lib.umd.js"
+      ></script>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <header data-thq="thq-navbar" class="home-navbar">
+          <span class="home-logo">
+            <span>boxkey</span>
+            <br />
+          </span>
+          <div
+            data-thq="thq-navbar-nav"
+            data-role="Nav"
+            class="home-desktop-menu"
+          >
+            <nav
+              data-thq="thq-navbar-nav-links"
+              data-role="Nav"
+              class="home-nav"
+            >
+              <a href="#about" class="home-link button-clean button">About</a>
+              <a href="#features" class="home-link01 button-clean button">
+                Features
+              </a>
+              <a href="#pricing" class="home-link02 button-clean button">
+                Pricing
+              </a>
+              <a href="#team" class="home-link03 button-clean button">Team</a>
+              <a href="#blog" class="home-link04 button-clean button">Blog</a>
+            </nav>
+          </div>
+          <div data-thq="thq-navbar-btn-group" class="home-btn-group">
+            <div class="home-socials">
+              <button class="social button">
+                <img
+                  alt="image"
+                  src="public/playground_assets/twitter.svg"
+                  class="home-image"
+                />
+              </button>
+              <button class="social button">
+                <img
+                  alt="image"
+                  src="public/playground_assets/discord.svg"
+                  class="home-image01"
+                />
+              </button>
+            </div>
+            <button class="button">App</button>
+          </div>
+          <div data-thq="thq-burger-menu" class="home-burger-menu">
+            <button class="button home-button">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+            <div
+              data-thq="thq-mobile-menu-nav"
+              data-role="Nav"
+              class="home-nav1"
+            >
+              <div class="home-container1">
+                <span class="home-logo1">boxkey</span>
+                <div data-thq="thq-close-menu" class="home-menu-close">
+                  <svg viewBox="0 0 1024 1024" class="home-icon02">
+                    <path
+                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <nav
+                data-thq="thq-mobile-menu-nav-links"
+                data-role="Nav"
+                class="home-nav2"
+              >
+                <span class="home-text002">About</span>
+                <span class="home-text003">Features</span>
+                <span class="home-text004">Pricing</span>
+                <span class="home-text005">Team</span>
+                <span class="home-text006">Blog</span>
+              </nav>
+              <div class="home-container2">
+                <button class="home-login button">Login</button>
+                <button class="button">Register</button>
+              </div>
+            </div>
+            <div class="home-icon-group">
+              <svg viewBox="0 0 950.8571428571428 1024" class="home-icon04">
+                <path
+                  d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                ></path></svg
+              ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon06">
+                <path
+                  d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                ></path></svg
+              ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon08">
+                <path
+                  d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </header>
+        <section class="home-hero">
+          <div class="home-heading">
+            <h1 class="home-header">The AirBnB of electric vehicle charging</h1>
+            <p class="home-caption">
+              <span>Earn money by sharing your EV-charger with others</span>
+              <br />
+            </p>
+          </div>
+          <div class="home-buttons">
+            <button class="button">Open the App</button>
+            <a href="#about" class="home-learn button-clean button">
+              Learn more
+            </a>
+          </div>
+        </section>
+        <section class="home-description">
+          <img
+            alt="image"
+            src="public/playground_assets/hero-divider-1500w.png"
+            class="home-divider-image"
+          />
+          <div id="about" class="home-container3">
+            <div class="home-description01">
+              <div class="home-content">
+                <p class="home-paragraph">
+                  <span>
+                    Boxkey is a ev charging platform that turns your unused home 
+                    charger into an income source.
+                  </span>
+                  <br />
+                  <span>
+                    By enabling homeowners to share their EV chargers during
+                    their idle hours, we're creating a sustainable,
+                    community-driven solution to the increasing demand for
+                    electric vehicle charging.
+                  </span>
+                </p>
+                <p class="home-paragraph1">
+                  <span>
+                    With boxkey, not only do you contribute to a greener future,
+                    but you also make a profit from an otherwise unutilized
+                    asset.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Join us in redefining the EV charging infrastructure, one
+                    home at a time.
+                  </span>
+                </p>
+              </div>
+              <div class="home-links">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="button-link button"
+                >
+                  <span>Follow us on Twitter</span>
+                  <img
+                    alt="image"
+                    src="public/playground_assets/arrow.svg"
+                    class="home-arrow"
+                  />
+                </a>
+                <a
+                  href="https://discord.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link06 button-link button"
+                >
+                  <span>Join us on Discord</span>
+                  <img
+                    alt="image"
+                    src="public/playground_assets/arrow.svg"
+                    class="home-arrow1"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="pricing" class="home-pricing">
+          <div class="home-row">
+            <div class="home-card">
+              <div class="home-avatar">
+                <img
+                  alt="image"
+                  src="public/playground_assets/avatar.svg"
+                  class="home-avatar1"
+                />
+              </div>
+              <div class="home-main">
+                <div class="home-content01">
+                  <h2 class="home-header01">EV Owner</h2>
+                  <p class="home-description02">
+                    <span>
+                      Experience the ultimate convenience on our platform -
+                    </span>
+                    <span class="home-text019">
+                      no hidden fees, no mandatory account registration, no
+                      giving out your email
+                    </span>
+                    <span>
+                      , pay only for the electrons going into your electric
+                      vehicle.
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                      Simply select your desired EV charger, provide your
+                      payment information through our secure partner, Stripe,
+                      and you're ready to charge.
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                      Embrace the ease and affordability of our user-centric
+                      platform as your EV fills up with clean, efficient energy.
+                    </span>
+                  </p>
+                </div>
+                <button class="home-learn1 button">
+                  <span class="home-text027">Find available chargers</span>
+                  <img
+                    alt="image"
+                    src="public/playground_assets/arrow.svg"
+                    class="home-image02"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="home-card1">
+              <div class="home-avatar2">
+                <img
+                  alt="image"
+                  src="public/playground_assets/default-avatar.svg"
+                  class="home-avatar3"
+                />
+              </div>
+              <div class="home-main1">
+                <div class="home-content02">
+                  <h2 class="home-header02">Seller</h2>
+                  <p class="home-description03">
+                    <span>
+                      As an EV charger owner, unlock a new stream of income by
+                      renting out your charging station when not in use.
+                    </span>
+                    <br class="home-text029" />
+                    <br class="home-text030" />
+                    <span class="home-text031">
+                      Joining our platform is absolutely free
+                    </span>
+                    <span>
+                      , and you stand to receive 80% of the total amount charged
+                      by your renters.
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                      Turn your EV charging station into a profitable asset and
+                      start earning effortlessly with us today.
+                    </span>
+                  </p>
+                </div>
+                <button class="home-learn2 button">
+                  <span class="home-text036">Enroll your EV charger</span>
+                  <img
+                    alt="image"
+                    src="public/playground_assets/arrow-2.svg"
+                    class="home-image03"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="home-card2">
+            <div class="home-avatar4">
+              <img
+                alt="image"
+                src="public/playground_assets/light-avatar.svg"
+                class="home-avatar5"
+              />
+            </div>
+            <div class="home-row1">
+              <div class="home-main2">
+                <div class="home-content03">
+                  <h2 class="home-header03">Win-Win</h2>
+                  <p class="home-description04">
+                    <span>
+                      Welcome to our platform, the premier digital hangout for
+                      EV enthusiasts, eco-warriors, and anyone with a charger to
+                      spare! We're here to electrify your world, one charger at
+                      a time.
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                      Are you an EV owner frequently on the run, praying to the
+                      battery gods that your charge lasts the commute? Or
+                      perhaps you're a charger owner, your EV charger lazing
+                      around, longing for more action? We're the matchmakers you
+                      didn't know you needed, connecting those in need of a
+                      charge with those who have a charger on standby.
+                    </span>
+                    <br />
+                  </p>
+                </div>
+              </div>
+              <img
+                alt="image"
+                src="public/playground_assets/group%202262.svg"
+                class="home-image04"
+              />
+            </div>
+            <div class="home-row2">
+              <div class="home-main3">
+                <div class="home-content04">
+                  <p class="home-description05">
+                    <span>
+                      Our unique pricing model is as smart as your EV. We use an
+                      AI-powered pricing engine that factors in real-time
+                      electricity costs and charger location popularity to
+                      suggest the perfect rate. We believe in fair pricing - you
+                      only pay for the electrons that make the leap into your
+                      EV. No hidden fees, no unnecessary registration, just you,
+                      your EV, and a world of chargers at your fingertips.
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                      But wait, there's more! As a charger owner, we invite you
+                      to transform your EV charger into a passive income stream.
+                      Whether you're an individual or a company, our platform
+                      equips you to efficiently manage your chargers, earning
+                      80% of the total amount charged by your renters. It's not
+                      just any win-win situation; it's an electrifying one!
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                      We're not just about convenience and cost-effectiveness;
+                      we're also about caring for our planet. By promoting
+                      shared EV charging, we're driving a greener future, one
+                      charge at a time.
+                    </span>
+                    <br />
+                    <br />
+                    <span>
+                      So why wait? Join our platform today, and let's power the
+                      future of EV charging together. It's high time you
+                      switched to a smarter, greener, and more electrifying
+                      lifestyle. Now that's what we call a powerful move!
+                    </span>
+                    <br />
+                  </p>
+                </div>
+                <button class="home-learn3 button">
+                  <span class="home-text053">Try it out</span>
+                  <img
+                    alt="image"
+                    src="public/playground_assets/arrow-2.svg"
+                    class="home-image05"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="team" class="home-team">
+          <div class="home-content05">
+            <span class="home-caption01">Team</span>
+            <div class="home-heading01">
+              <h2 class="home-header04">Who are we?</h2>
+              <p class="home-header05">
+                Who are we, the team bringing this convenient service to you? We
+                are a dedicated group of techies passionate about driving the
+                future of electric vehicle charging. Our commitment is to make
+                EV charging accessible, affordable, and efficient for everyone.
+              </p>
+            </div>
+          </div>
+          <div class="home-main4">
+            <div class="home-card3">
+              <div class="home-image06">
+                <img
+                  alt="image"
+                  src="public/playground_assets/character-1.svg"
+                  class="home-image07"
+                />
+              </div>
+              <div class="home-content06">
+                <span class="home-caption02">Katarina</span>
+                <h3 class="home-title">
+                  Introducing Katarina: the better half of Marcus and our
+                  marketing maestro. She's a Doritos aficionado and, while her
+                  love for EVs might have been influenced by Marcus, her
+                  deep-rooted passion for the environment is all her own.
+                  Together, they make a dynamic duo, driving our mission
+                  forward.
+                </h3>
+              </div>
+            </div>
+            <div class="home-card4">
+              <div class="home-image08">
+                <img
+                  alt="image"
+                  src="public/playground_assets/character-2.svg"
+                  class="home-image09"
+                />
+              </div>
+              <div class="home-content07">
+                <span class="home-caption03">Marcus</span>
+                <p class="home-title1">
+                  Meet Marcus: a dedicated father of two, an avid EV enthusiast,
+                  a proficient developer, a master architect, and a skilled
+                  golfer with an impressive 6 handicap. While he may not be a
+                  fan of skiing, his passions lie in shaping the future of
+                  electric vehicle technology and hitting the greens.
+                </p>
+              </div>
+            </div>
+            <div class="home-card5">
+              <div class="home-image10">
+                <img
+                  alt="image"
+                  src="public/playground_assets/character-6.svg"
+                  class="home-image11"
+                />
+              </div>
+              <div class="home-content08">
+                <span class="home-caption04">Anton</span>
+                <h3 class="home-title2">
+                  Say hello to Anton: an outdoor enthusiast who's always ready
+                  for another skiing adventure and enjoys both indoor and
+                  outdoor swimming. But don't let his adventurous side fool you;
+                  he's also our front-end wizard and business savant, bringing
+                  an exceptional blend of technical prowess and business acumen
+                  to the team.
+                </h3>
+              </div>
+            </div>
+            <div class="home-card6">
+              <div class="home-image12">
+                <img
+                  alt="image"
+                  src="public/playground_assets/character-4.svg"
+                  class="home-image13"
+                />
+              </div>
+              <div class="home-content09">
+                <span class="home-caption05">
+                  <span>Henrik</span>
+                  <br />
+                </span>
+                <h3 class="home-title3">
+                  Meet Henrik: another skiing enthusiast on our team who also
+                  happens to be a proficient Ninjutsu practitioner. But his true
+                  mastery lies in the realm of engineering. As a dedicated
+                  professional, he immerses himself in architectural design,
+                  becoming an invaluable asset to our team with his intricate
+                  understanding and innovative approach.
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="features" class="home-features">
+          <div class="home-mining">
+            <img
+              alt="image"
+              src="public/playground_assets/group%202422.svg"
+              class="home-image14"
+            />
+            <div class="home-content10">
+              <span class="home-caption06">boxkey</span>
+              <div class="home-heading02">
+                <h2 class="home-header06">How does it work?</h2>
+                <p class="home-header07">
+                  <span class="home-text056">1.</span>
+                  <span>
+                    Your eco-conscious neighbor decides to rent out their EV
+                    charger during off-use hours. Our AI-powered pricing engine
+                    suggests a suitable rate, taking into account real-time
+                    electricity costs and the charger's location popularity.
+                  </span>
+                  <br />
+                  <br />
+                  <br />
+                  <span class="home-text061">2.</span>
+                  <span>
+                    An EV owner in need of a charge turns to our app, locating
+                    nearby chargers with ease. A few clicks and credit card
+                    details later, the charging begins. Users can set limits on
+                    the cost of a charging session or the amount of kWh to be
+                    charged.
+                  </span>
+                  <br />
+                  <br />
+                  <br />
+                  <span class="home-text066">3.</span>
+                  <span>
+                    Users can actively monitor the charging process directly
+                    within the app, with the freedom to halt the charging
+                    session at their convenience.
+                  </span>
+                  <br />
+                  <br />
+                  <br />
+                  <span class="home-text071">4.</span>
+                  <span>
+                    Once the charging session concludes, the total cost is
+                    calculated and disbursed to the charger renter within a few
+                    days, making it a hassle-free and efficient process.
+                  </span>
+                  <br />
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="blog" class="home-blog">
+          <div class="home-heading03">
+            <h2 class="home-header08">Blog</h2>
+            <p class="home-header09">Whats on our minds?</p>
+          </div>
+          <div class="home-list">
+            <div class="home-step">
+              <span class="home-caption07">01</span>
+              <div class="home-heading04">
+                <h2 class="home-header10">
+                  The Spark that Ignited a Revolution
+                </h2>
+                <p class="home-header11">
+                  <span>
+                    Once upon a time, in a world of dwindling fossil fuels and
+                    growing environmental concerns, Anton, our EV-loving skier
+                    had an electrifying idea. He saw a future where EV charging
+                    was as easy as grabbing a cup of coffee at the local cafe. A
+                    future where unused chargers didn't just gather dust, but
+                    offered an opportunity for income. And thus, our innovative
+                    EV charging platform was born.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    From a simple idea, he gathered the team to create a
+                    platform that's changing the face of EV charging, making it
+                    more accessible, affordable, and eco-friendly than ever
+                    before.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Stay tuned as we share more about our journey and where
+                    we're headed. The future is electric, and we're just getting
+                    started!
+                  </span>
+                </p>
+                <div class="home-benefits">
+                  <div class="home-item">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/people.svg"
+                      class="home-image15"
+                    />
+                    <p class="home-header12">Katarina</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-step1">
+              <span class="home-caption08">02</span>
+              <div class="home-heading05">
+                <h2 class="home-header13">
+                  Behind the Scenes of Making EV Charging Simple
+                </h2>
+                <p class="home-header14">
+                  <span>
+                    When we first set out to develop our platform, we knew we
+                    had a challenge on our hands. Our goal was simple - to make
+                    EV charging as convenient as possible. The implementation,
+                    however, was a complex endeavor.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Anton, our front-end guru, spent countless hours crafting a
+                    user interface that was not only visually appealing but also
+                    incredibly easy to navigate. Meanwhile, Henrik, our
+                    engineering expert, worked tirelessly on the back-end,
+                    ensuring that our platform could handle everything from
+                    locating a charger to initiating a charging session
+                    smoothly.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    It was a labor of love, and we couldn't be prouder of the
+                    result. Today, our platform stands as a testament to our
+                    team's dedication and ingenuity, making EV charging as easy
+                    as 1-2-3.
+                  </span>
+                </p>
+                <div class="home-benefits1">
+                  <div class="home-item1">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/people.svg"
+                      class="home-image16"
+                    />
+                    <p class="home-header15">Katarina</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-step2">
+              <span class="home-caption09">03</span>
+              <div class="home-heading06">
+                <h2 class="home-header16">
+                  Driving Towards a Greener Future: Our Sustainability Journey
+                </h2>
+                <p class="home-header17">
+                  <span>
+                    As we set about creating our platform, we were not just
+                    focused on revolutionizing EV charging. We were, and remain,
+                    deeply committed to driving a greener future. This
+                    commitment is evident in every aspect of our platform, from
+                    promoting shared EV charging to reducing the need for
+                    additional charging infrastructure.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    The journey hasn't always been easy. Balancing user
+                    convenience with sustainability considerations was a
+                    challenge. But we remained steadfast, motivated by our
+                    vision of a cleaner, greener planet. Today, we're proud to
+                    say that every charge on our platform is a step towards a
+                    more sustainable future.
+                  </span>
+                </p>
+                <div class="home-benefits2">
+                  <div class="home-item2">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/people.svg"
+                      class="home-image17"
+                    />
+                    <p class="home-header18">Marcus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-step3">
+              <span class="home-caption10">04</span>
+              <div class="home-heading07">
+                <h2 class="home-header19">
+                  Turning Chargers into Profitable Assets: Our Win-Win Model
+                </h2>
+                <p class="home-header20">
+                  <span>
+                    In the early days of our platform's development, we pondered
+                    how we could incentivize charger owners to join us. The
+                    answer was surprisingly simple - turn their underutilized
+                    chargers into a source of income.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Our team worked tirelessly to create a model that was fair
+                    to both charger owners and EV users. After much deliberation
+                    and a few Doritos-fueled late-night sessions (thanks to
+                    Katarina, our Doritos-loving marketing ninja), we landed on
+                    the idea of giving charger owners 80% of the total amount
+                    charged by renters.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Today, charger owners on our platform are not just part of
+                    the EV revolution; they're also enjoying a new stream of
+                    passive income.
+                  </span>
+                </p>
+                <div class="home-benefits3">
+                  <div class="home-item3">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/people.svg"
+                      class="home-image18"
+                    />
+                    <p class="home-header21">Katarina</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-step4">
+              <span class="home-caption11">05</span>
+              <div class="home-heading08">
+                <h2 class="home-header22">
+                  The Road Ahead: Our Vision for the Future of EV Charging
+                </h2>
+                <p class="home-header23">
+                  <span>
+                    As we reflect on our journey so far, we're incredibly proud
+                    of what we've achieved. But we're not resting on our
+                    laurels. The road ahead is filled with exciting
+                    opportunities, and we're ready to seize them.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    We envision a future where our platform is the go-to
+                    resource for EV charging - a future where finding a charger
+                    is as easy as finding a coffee shop. We're already working
+                    on new features and enhancements that will bring us closer
+                    to this vision.
+                  </span>
+                  <br />
+                  <br />
+                  <span>
+                    Our journey has just begun, and we invite you to join us as
+                    we continue to drive the future of EV charging. Together, we
+                    can power a brighter, cleaner, and more electrifying future.
+                  </span>
+                </p>
+                <div class="home-benefits4">
+                  <div class="home-item4">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/people.svg"
+                      class="home-image19"
+                    />
+                    <p class="home-header24">Marcus</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-join-us">
+          <div class="home-content11">
+            <div class="home-main5">
+              <div class="home-heading09">
+                <h2 class="home-header25">Start sharing your charger now!</h2>
+                <p class="home-caption12">
+                  <span>
+                    Enroll your charger on our platform and start earning those
+                    easy bucks!
+                  </span>
+                  <br />
+                </p>
+              </div>
+              <button class="home-view2 button">Open the App</button>
+            </div>
+            <img
+              alt="image"
+              src="public/playground_assets/group%202273.svg"
+              class="home-image20"
+            />
+          </div>
+        </section>
+        <section class="home-faq">
+          <h2 class="home-header26">We have all the answers</h2>
+          <div class="home-accordion">
+            <div data-role="accordion-container" class="home-element accordion">
+              <div class="home-content12">
+                <span class="home-header27">
+                  Q: How does our EV charging platform work?
+                </span>
+                <span data-role="accordion-content" class="home-description06">
+                  Our platform simplifies EV charging by connecting EV owners in
+                  need of a charge with charger owners looking to rent out their
+                  charger. Users can locate a charger, set their charging
+                  preferences, and start their charging session with just a few
+                  clicks. Charger owners can earn passive income by renting out
+                  their underutilized chargers.
+                </span>
+              </div>
+              <div class="home-icon-container">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon10"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon12"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="home-element1 accordion"
+            >
+              <div class="home-content13">
+                <span class="home-header28">
+                  Q: What is the cost of charging my EV on the platform?
+                </span>
+                <span data-role="accordion-content" class="home-description07">
+                  We believe in fair and transparent pricing. Our AI-powered
+                  pricing engine suggests a rate based on real-time electricity
+                  costs and charger location popularity. You only pay for the
+                  energy your EV consumes, making EV charging on our platform
+                  affordable and efficient.
+                </span>
+              </div>
+              <div class="home-icon-container1">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon14"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon16"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="home-element2 accordion"
+            >
+              <div class="home-content14">
+                <span class="home-header29">
+                  How can I earn money by renting out my EV charger?
+                </span>
+                <span data-role="accordion-content" class="home-description08">
+                  As a charger owner, you can turn your underutilized charger
+                  into a source of income. Simply list your charger on our
+                  platform, and we handle the rest. You'll earn 80% of the total
+                  amount charged by your renters.
+                </span>
+              </div>
+              <div class="home-icon-container2">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon18"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon20"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="home-element3 accordion"
+            >
+              <div class="home-content15">
+                <span class="home-header30">
+                  How is our platform contributing to a greener future?
+                </span>
+                <span data-role="accordion-content" class="home-description09">
+                  We're deeply committed to driving a greener future. By
+                  promoting shared EV charging, we're reducing the need for
+                  additional charging infrastructure, thus saving valuable
+                  resources and decreasing our environmental footprint. Each
+                  charge on our platform is a step towards a more sustainable
+                  future.
+                </span>
+              </div>
+              <div class="home-icon-container3">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon22"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon24"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div
+              data-role="accordion-container"
+              class="home-element4 accordion"
+            >
+              <div class="home-content16">
+                <span class="home-header31">
+                  What is the future of our EV charging platform?
+                </span>
+                <span data-role="accordion-content" class="home-description10">
+                  We envision a future where our platform is the go-to resource
+                  for EV charging. We're constantly working on new features and
+                  enhancements to make EV charging even more accessible and
+                  efficient. Our goal is to make finding a charger as easy as
+                  finding a coffee shop, and we're excited about the journey
+                  ahead.
+                </span>
+              </div>
+              <div class="home-icon-container4">
+                <svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-closed"
+                  class="home-icon26"
+                >
+                  <path
+                    d="M213.333 554.667h256v256c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-256h256c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-256v-256c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667v256h-256c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path></svg
+                ><svg
+                  viewBox="0 0 1024 1024"
+                  data-role="accordion-icon-open"
+                  class="home-icon28"
+                >
+                  <path
+                    d="M213.333 554.667h597.333c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-597.333c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="home-footer">
+          <div class="home-main6">
+            <div class="home-branding">
+              <div class="home-heading10">
+                <h2 class="home-logo2">boxkey</h2>
+                <p class="home-caption13">the ev charging company</p>
+              </div>
+              <div class="home-socials1">
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-twitter1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/playground_assets/twitter.svg"
+                    class="home-image21"
+                  />
+                </a>
+                <a
+                  href="https://discord.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-discord1 social button"
+                >
+                  <img
+                    alt="image"
+                    src="public/playground_assets/discord.svg"
+                    class="home-image22"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="home-links1">
+              <div class="home-list1">
+                <h3 class="home-heading11">Site</h3>
+                <div class="home-items">
+                  <a href="#about" class="home-link07 button-clean button">
+                    About
+                  </a>
+                  <a href="#features" class="home-link08 button-clean button">
+                    Features
+                  </a>
+                  <a href="#pricing" class="home-link09 button-clean button">
+                    Pricing
+                  </a>
+                  <a href="#team" class="home-link10 button-clean button">
+                    Team
+                  </a>
+                  <a href="#blog" class="home-link11 button-clean button">
+                    Blog
+                  </a>
+                </div>
+              </div>
+              <div class="home-list2">
+                <h3 class="home-heading12">Company</h3>
+                <div class="home-items1">
+                  <a href="#team" class="home-link12 button-clean button">
+                    Team
+                  </a>
+                  <button class="home-link13 button-clean button">Press</button>
+                  <button class="home-link14 button-clean button">Terms</button>
+                  <button class="home-link15 button-clean button">
+                    Limitations
+                  </button>
+                  <button class="home-link16 button-clean button">
+                    Licenses
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="home-socials2">
+              <a
+                href="https://twitter.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-twitter2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/twitter.svg"
+                  class="home-image23"
+                />
+              </a>
+              <a
+                href="https://discord.com"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-discord2 social button"
+              >
+                <img
+                  alt="image"
+                  src="public/playground_assets/discord.svg"
+                  class="home-image24"
+                />
+              </a>
+            </div>
+          </div>
+          <span class="home-copyright">
+            © 2023 boxkey. All Rights Reserved.
+          </span>
+        </footer>
+        <div>
+          <dangerous-html
+            html="<script>
+ /*
+  Accordion - Code Embed
+  */
+  const accordionContainers = document.querySelectorAll('[data-role='accordion-container']'); // All accordion containers
+  const accordionContents = document.querySelectorAll('[data-role='accordion-content']'); // All accordion content
+  const accordionIconsClosed = document.querySelectorAll('[data-role='accordion-icon-closed']'); // All accordion closed icons
+  const accordionIconsOpen = document.querySelectorAll('[data-role='accordion-icon-open']'); // All accordion open icons
+
+  accordionContents.forEach((accordionContent) => {
+      accordionContent.style.display = 'none'; //Hides all accordion contents
+  });
+
+  accordionIconsClosed.forEach((icon) => {
+    icon.style.display = 'flex'
+  })
+
+  accordionIconsOpen.forEach((icon) => {
+    icon.style.display = 'none'
+  })
+
+  accordionContainers.forEach((accordionContainer, index) => {
+      accordionContainer.addEventListener('click', () => {
+          if (accordionContents[index].style.display === 'flex') {
+              // If the accordion is already open, close it
+              accordionContents[index].style.display = 'none';
+              accordionIconsClosed[index].style.display = 'flex';
+              accordionIconsOpen[index].style.display = 'none'
+          } else {
+              // If the accordion is closed, open it
+              accordionContents.forEach((accordionContent) => {
+                  accordionContent.style.display = 'none'; //Hides all accordion contents
+              });
+
+              accordionIconsClosed.forEach((accordionIcon) => {
+                  accordionIcon.style.display = 'flex'; // Resets all icon transforms to 0deg (default)
+              });
+
+              accordionIconsOpen.forEach((accordionIcon) => {
+                accordionIcon.style.display = 'none';
+              })
+              
+              accordionContents[index].style.display = 'flex'; // Shows accordion content
+              accordionIconsClosed[index].style.display = 'none'; // Rotates accordion icon 180deg
+              accordionIconsOpen[index].style.display = 'flex';
+          }
+      });
+  });
+</script>
+"
+          ></dangerous-html>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
