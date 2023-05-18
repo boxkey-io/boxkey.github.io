@@ -1694,11 +1694,11 @@
     line-height: 60px;
   }
   .home-description04 {
-    width: 336px;
+    width: 328px;
   }
   .home-image04 {
-    width: 508px;
-    height: 406px;
+    width: 345px;
+    height: 226px;
   }
   .home-team {
     width: 100%;
@@ -1768,6 +1768,10 @@
   }
   .home-row1 {
     flex-direction: column;
+  }
+  .home-image04 {
+    width: 100%;
+    height: 100%;
   }
   .home-row2 {
     flex-direction: column;
@@ -2229,32 +2233,66 @@
   .home-mobile-menu {
     padding: 16px;
   }
+  .home-description {
+    margin-bottom: 0px;
+  }
   .home-description01 {
     height: 843px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   .home-pricing {
-    height: 2541px;
+    height: 100%;
+    z-index: 100;
+    max-width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .home-description04 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .home-image04 {
+    height: 100%;
   }
   .home-team {
-    height: 2588px;
-    padding-bottom: var(--dl-space-space-unit);
+    height: 100%;
+    z-index: 100;
+    max-width: 100%;
+    margin-top: 0px;
+    padding-top: var(--dl-space-space-fourunits);
+    padding-bottom: var(--dl-space-space-fourunits);
   }
   .home-main4 {
+    height: 100%;
     grid-template-columns: repeat(1, 1fr);
   }
   .home-features {
     gap: var(--dl-space-space-fiveunits);
-    height: 1179px;
-    padding-bottom: var(--dl-space-space-unit);
+    height: 100%;
+    max-width: 100%;
+    margin-top: var(--dl-space-space-threeunits);
+    padding-top: 0px;
+    margin-bottom: var(--dl-space-space-threeunits);
+    padding-bottom: var(--dl-space-space-sixunits);
   }
   .home-blog {
-    height: 2069px;
+    height: 100%;
+    max-width: 100%;
+    margin-bottom: 0px;
+    padding-bottom: var(--dl-space-space-fourunits);
   }
   .home-join-us {
-    height: 629px;
+    height: auto;
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-bottom: 0px;
   }
   .home-image20 {
     width: 200%;
+  }
+  .home-faq {
+    margin-bottom: 0px;
   }
   .home-header27 {
     font-size: 16px;
